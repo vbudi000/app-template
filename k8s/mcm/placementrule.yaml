@@ -8,5 +8,5 @@ metadata:
 spec:
   clusterLabels:
     matchLabels:
-      name: cpeir-mcm
+      name: cpeir033
   clusterReplicas:  1

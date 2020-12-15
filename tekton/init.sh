@@ -26,6 +26,7 @@ giturl=$(git config --get remote.origin.url)
 find . -type f -name *.yaml | xargs sed -i .bak "s/{APPNAME}/${appname}/g"
 find . -type f -name *.yaml | xargs sed -i .bak "s/{APPVERSION}/${appversion}/g"
 find . -type f -name *.yaml | xargs sed -i .bak "s/{GITURL}/${giturl}/g"
+find . -type f -name *.yaml | xargs sed -i .bak "s/{DEVOPSNS}/${devopsns}/g"
 find . -type f -name *.yaml | xargs sed -i .bak "s/{DEVNS}/${devns}/g"
 find . -type f -name *.yaml | xargs sed -i .bak "s/{QANS}/${qans}/g"
 find . -type f -name *.yaml | xargs sed -i .bak "s/{PRODNS}/${prodns}/g"
